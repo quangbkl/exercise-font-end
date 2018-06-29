@@ -266,6 +266,24 @@ body {
             min-height: 265px;
             margin: 20px 40px 0 0;
             position: relative; }
+            @media only screen and (max-width: 2060px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 6) - 40px); } }
+            @media only screen and (max-width: 1780px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 5) - 40px); } }
+            @media only screen and (max-width: 1500px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 4) - 40px); } }
+            @media only screen and (max-width: 1220px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 3) - 40px); } }
+            @media only screen and (max-width: 940px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 2) - 40px); } }
+            @media only screen and (max-width: 660px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 1) - 40px); } }
             .main .content .products .grid .items li .add {
               position: absolute;
               display: flex;
