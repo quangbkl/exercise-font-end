@@ -263,7 +263,6 @@ body {
           margin-right: -40px; }
           .main .content .products .grid .items li {
             width: calc((100% / 6) - 40px);
-            min-height: 265px;
             margin: 20px 40px 0 0;
             position: relative; }
             @media only screen and (max-width: 2060px) {
@@ -298,25 +297,35 @@ body {
               top: -12px;
               font-size: 15px;
               color: rgba(128, 128, 128, 0.4); }
-            .main .content .products .grid .items li img {
-              cursor: pointer;
+            .main .content .products .grid .items li .image {
+              position: relative;
               width: 100%;
-              height: 265px;
-              object-fit: cover;
-              border-radius: 5px; }
-            .main .content .products .grid .items li .price {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              padding: 0 5px;
-              height: 20px;
-              border-radius: 5px;
-              background-color: rgba(0, 0, 0, 0.4);
-              font-size: 12px;
-              color: white;
-              position: absolute;
-              top: 228px;
-              left: 5px; }
+              padding-top: 120%; }
+              .main .content .products .grid .items li .image .text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0; }
+                .main .content .products .grid .items li .image .text img {
+                  cursor: pointer;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 5px; }
+              .main .content .products .grid .items li .image .price {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 5px;
+                height: 20px;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.4);
+                font-size: 12px;
+                color: white;
+                position: absolute;
+                bottom: -7px;
+                left: 5px; }
             .main .content .products .grid .items li .price-2 {
               font-size: 16px;
               font-weight: bold;

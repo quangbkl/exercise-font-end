@@ -1,267 +1,443 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>Quang BKL</title>
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-        <link href="./ionicons/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="main">
-            <div class="sidebar">
-                <div class="logo-sidebar">
-                    <img src="./images/logo-sidebar.png">
-                </div>
 
-                <div class="click">
+<head>
+    <title>Quang BKL</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="./ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo-sidebar">
+                <img src="./images/logo-sidebar.png">
+            </div>
+
+            <div class="click">
+                <ul>
+                    <li>
+                        <i class="lnr lnr-pie-chart"></i> Statistic</li>
+                    <li class="active">
+                        <i class="lnr lnr-shirt"></i> Products</li>
+                    <li>
+                        <i class="lnr lnr-camera"></i> Keywords</li>
+                    <li>
+                        <i class="lnr lnr-camera"></i> Trends</li>
+                    <li>
+                        <i class="lnr lnr-camera"></i> Tracking</li>
+                    <li>
+                        <i class="lnr lnr-camera"></i> Analytics</li>
+                </ul>
+            </div>
+
+            <div class="more-info">
+                <p>More Infomation </p>
+                <i class="icon ion-android-arrow-dropright"></i>
+            </div>
+
+            <div class="user">
+                <!-- <img src="./images/avatar-user.png"> -->
+                <img src="https://www.sideshowtoy.com/wp-content/uploads/2015/08/batman-the-dark-knight-premium-format-sideshow-feature-300229.jpg">
+                <p>Nguyễn Đình Tiến</p>
+                <i class="icon ion-android-arrow-dropright"></i>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header-content">
+                <div class="rectangle"></div>
+
+                <div class="left">
+                    <form class="search">
+                        <div class="type">
+                            Search Type
+                            <i class="icon ion-android-arrow-dropdown"></i>
+                        </div>
+
+                        <input type="text" placeholder="ASIN or keyword...">
+
+                        <button>
+                            <i class="icon ion-android-search"></i>
+                        </button>
+                    </form>
+
+                    <div class="no-search">
+                        <i class="icon ion-android-search"></i>
+                        <div class="slash"></div>
+                    </div>
+
                     <ul>
-                        <li><i class="lnr lnr-pie-chart"></i> Statistic</li>
-                        <li class="active"><i class="lnr lnr-shirt"></i> Products</li>
-                        <li><i class="lnr lnr-camera"></i> Keywords</li>
-                        <li><i class="lnr lnr-camera"></i> Trends</li>
-                        <li><i class="lnr lnr-camera"></i> Tracking</li>
-                        <li><i class="lnr lnr-camera"></i> Analytics</li>
+                        <li>
+                            <i class="icon ion-podium"></i>
+                            <p>Rank</p>
+                        </li>
+
+                        <li>
+                            <i class="icon ion-android-calendar"></i>
+                            <p>Time</p>
+                        </li>
+
+                        <li>
+                            <i class="icon ion-tshirt"></i>
+                            <p>Shirt Type</p>
+                        </li>
+
+                        <li>
+                            <i class="icon ion-social-bitcoin"></i>
+                            <p>Price</p>
+                        </li>
+
+                        <li>
+                            <p>Alive</p>
+                            <i class="icon ion-android-arrow-dropdown"></i>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="more-info">
-                    <p>More Infomation </p>
-                    <i class="icon ion-android-arrow-dropright"></i>
-                </div>
-
-                <div class="user">
-                    <!-- <img src="./images/avatar-user.png"> -->
-                    <img src="https://www.sideshowtoy.com/wp-content/uploads/2015/08/batman-the-dark-knight-premium-format-sideshow-feature-300229.jpg">
-                    <p>Nguyễn Đình Tiến</p>
-                    <i class="icon ion-android-arrow-dropright"></i>
+                <div class="right">
+                    <button>Save Query</button>
                 </div>
             </div>
 
-            <div class="content">
-                <div class="header-content">
-                    <div class="rectangle"></div>
-
+            <div class="products">
+                <div class="control">
                     <div class="left">
-                        <form class="search">
-                            <div class="type">
-                                Search Type
-                                <i class="icon ion-android-arrow-dropdown"></i>
-                            </div>
-
-                            <input type="text" placeholder="ASIN or keyword...">
-
-                            <button><i class="icon ion-android-search"></i></button>
-                        </form>
-
-                        <div class="no-search">
-                            <i class="icon ion-android-search"></i>
-                            <div class="slash"></div>
-                        </div>
-
-                        <ul>
-                            <li>
-                                <i class="icon ion-podium"></i>
-                                <p>Rank</p>
-                            </li>
-
-                            <li>
-                                <i class="icon ion-android-calendar"></i>
-                                <p>Time</p>
-                            </li>
-
-                            <li>
-                                <i class="icon ion-tshirt"></i>
-                                <p>Shirt Type</p>
-                            </li>
-
-                            <li>
-                                <i class="icon ion-social-bitcoin"></i>
-                                <p>Price</p>
-                            </li>
-
-                            <li>
-                                <p>Alive</p>
-                                <i class="icon ion-android-arrow-dropdown"></i>
-                            </li>
-                        </ul>
+                        <p>Soft by: </p>
+                        <button>Best seller rank</button>
+                        <button>Sudden increase</button>
+                        <button>More
+                            <i class="icon ion-android-arrow-dropdown"></i>
+                        </button>
                     </div>
 
                     <div class="right">
-                        <button>Save Query</button>
+                        <button>
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="active">
+                            <i class="fas fa-list"></i>
+                        </button>
+                        <div class="Small-Divider-Line"></div>
+                        <p>400 - 500 / 5,736,845 items</p>
                     </div>
                 </div>
 
-                <div class="products">
-                    <div class="control">
-                        <div class="left">
-                            <p>Soft by: </p>
-                            <button>Best seller rank</button>
-                            <button>Sudden increase</button>
-                            <button>More<i class="icon ion-android-arrow-dropdown"></i></button>
-                        </div>
+                <div class="grid">
+                    <ul class="items">
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <!-- <img src="./images/Layer 15.png"> -->
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 15.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <!-- <p class="price">$19.66</p> -->
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
 
-                        <div class="right">
-                            <button><i class="fas fa-th"></i></button>
-                            <button class="active"><i class="fas fa-list"></i></button>
-                            <div class="Small-Divider-Line"></div>
-                            <p>400 - 500 / 5,736,845 items</p>
-                        </div>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 16.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 17.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 18.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 19.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 20.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 21.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 22.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 23.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 24.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 25.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="./images/Layer 26.png">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="https://www.sideshowtoy.com/wp-content/uploads/2015/08/batman-the-dark-knight-premium-format-sideshow-feature-300229.jpg">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                        <li>
+                            <div class="add">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="image">
+                                <div class="text">
+                                    <img src="https://www.sideshowtoy.com/wp-content/uploads/2015/08/batman-the-dark-knight-premium-format-sideshow-feature-300229.jpg">
+                                </div>
+                                <p class="price">$19.66</p>
+                            </div>
+                            <p class="price-2">
+                                <i class="icon ion-ios-paperplane"></i>10,000,000
+                                <span>+69.6%</span>
+                            </p>
+                            <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
+                            <p class="asin">ASIN:
+                                <b>B076PTG3HS</b>
+                            </p>
+                            <p class="time">6 hours ago</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page">
+                    <div class="left">
+                        <p>Show:</p>
+                        <button>100
+                            <i class="icon ion-android-arrow-dropdown"></i>
+                        </button>
+                        <p>items</p>
                     </div>
 
-                    <div class="grid">
-                        <ul class="items">
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 15.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 16.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 17.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 18.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 19.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 20.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 21.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 22.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 23.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 24.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 25.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="./images/Layer 26.png">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="https://www.sideshowtoy.com/wp-content/uploads/2015/08/batman-the-dark-knight-premium-format-sideshow-feature-300229.jpg">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                            <li>
-                                <div class="add"><i class="fas fa-tasks"></i></div>
-                                <img src="https://www.sideshowtoy.com/wp-content/uploads/2015/08/batman-the-dark-knight-premium-format-sideshow-feature-300229.jpg">
-                                <p class="price">$19.66</p>
-                                <p class="price-2"><i class="icon ion-ios-paperplane"></i>10,000,000 <span>+69.6%</span></p>
-                                <p class="description">New England VS Everyone Shirt, Baseball Shirt, Season Trend</p>
-                                <p class="asin">ASIN: <b>B076PTG3HS</b></p>
-                                <p class="time">6 hours ago</p>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="page">
-                        <div class="left">
-                            <p>Show:</p>
-                            <button>100<i class="icon ion-android-arrow-dropdown"></i></button>
-                            <p>items</p>
-                        </div>
-
-                        <div class="right">
-                            <button><</button>
-                            <button>1</button>
-                            <button class="active">2</button>
-                            <button>3</button>
-                            <button>...</button>
-                            <button>100</button>
-                            <button class="active">></button>
-                        </div>
+                    <div class="right">
+                        <button><</button>
+                        <button>1</button>
+                        <button class="active">2</button>
+                        <button>3</button>
+                        <button>...</button>
+                        <button>100</button>
+                        <button class="active">></button>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
