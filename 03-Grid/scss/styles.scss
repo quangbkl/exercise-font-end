@@ -377,7 +377,7 @@ body {
                         margin: 20px 40px 0 0;
                         position: relative;
 
-                        @for $i from 6 through 1 {
+                        @for $i from 20 through 1 {
                             @media only screen and (max-width: 280px * $i + 380px) {
                                 width: calc((100% / #{$i}) - 40px);
                                 // height: 80px * $i;
@@ -385,7 +385,9 @@ body {
                         }
 
                         .add {
+                            cursor: pointer;
                             position: absolute;
+                            z-index: 1;
                             @include center-items;
                             height: 23px;
                             width: 23px;

@@ -265,6 +265,48 @@ body {
             width: calc((100% / 6) - 40px);
             margin: 20px 40px 0 0;
             position: relative; }
+            @media only screen and (max-width: 5980px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 20) - 40px); } }
+            @media only screen and (max-width: 5700px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 19) - 40px); } }
+            @media only screen and (max-width: 5420px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 18) - 40px); } }
+            @media only screen and (max-width: 5140px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 17) - 40px); } }
+            @media only screen and (max-width: 4860px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 16) - 40px); } }
+            @media only screen and (max-width: 4580px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 15) - 40px); } }
+            @media only screen and (max-width: 4300px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 14) - 40px); } }
+            @media only screen and (max-width: 4020px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 13) - 40px); } }
+            @media only screen and (max-width: 3740px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 12) - 40px); } }
+            @media only screen and (max-width: 3460px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 11) - 40px); } }
+            @media only screen and (max-width: 3180px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 10) - 40px); } }
+            @media only screen and (max-width: 2900px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 9) - 40px); } }
+            @media only screen and (max-width: 2620px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 8) - 40px); } }
+            @media only screen and (max-width: 2340px) {
+              .main .content .products .grid .items li {
+                width: calc((100% / 7) - 40px); } }
             @media only screen and (max-width: 2060px) {
               .main .content .products .grid .items li {
                 width: calc((100% / 6) - 40px); } }
@@ -284,7 +326,9 @@ body {
               .main .content .products .grid .items li {
                 width: calc((100% / 1) - 40px); } }
             .main .content .products .grid .items li .add {
+              cursor: pointer;
               position: absolute;
+              z-index: 1;
               display: flex;
               justify-content: center;
               align-items: center;
